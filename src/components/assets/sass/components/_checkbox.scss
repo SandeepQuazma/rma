@@ -1,0 +1,123 @@
+.ct-checkbox {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    color: $primary-text;
+    input[type="checkbox"] {
+        display: none;
+    }
+    .checkbox-content {
+        display: block;
+        overflow: hidden;
+        padding: 8px 0;
+        line-height: normal;
+        position: relative;
+        padding-left: 24px;
+        .mdi {
+            font-size: 18px;
+            margin-right: 5px;
+            position: absolute;
+            left: 0;
+            top: 4px;
+        }
+        span {
+            display: block;
+        }
+        &:hover {
+            .mdi {
+                color: $rma-green;
+            }
+        }
+    }
+    input[type="checkbox"] {
+        &:checked {
+            ~ .checkbox-content {
+                .mdi-checkbox-blank-outline {
+                    color: $rma-green;
+                    &:before {
+                        content: "\F0132";
+                    }
+                }
+            }
+        }
+    }
+}
+.item-checkbox {
+    display: block;
+    &.checkbox-inline {
+        padding-left: 0;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 20px;
+        vertical-align: middle;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    .check {
+        position: relative;
+        padding-left: 20px;
+        margin-right: 12px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        &.channels-check {
+            position: relative;
+            padding: 0px 0px 12px 15px;
+            display: block;
+            width: 100%;
+            border-bottom: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            .text {
+                font-weight: $fw-n;
+            }
+            .mdi-checkbox-blank-outline {
+                color: #ccc;
+                font-size: 20px;
+                position: absolute;
+                top: 12px;
+                left: 0;
+                &.top-5 {
+                    top: 5px;
+                }
+                &.top-0 {
+                    top: 0;
+                }
+            }
+        }
+    }
+    &.no-lines .check {
+        border-bottom: 0;
+    }
+    .check {
+        .text {
+            font-weight: $fw-m;
+        }
+        .mdi-checkbox-blank-outline {
+            color: $rma-gray;
+            font-size: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    input[type="checkbox"] {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        z-index: -999;
+        left: -99999px;
+        &:checked+.check .mdi-checkbox-blank-outline {
+            border: 0;
+            &::before {
+                content: '\F0132';
+                color: $rma-primary-blue-2 !important; 
+                font-size: 20px;
+            }
+        }
+    }
+}
+

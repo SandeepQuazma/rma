@@ -1,0 +1,10 @@
+.text-warning-hover {
+    &:hover {
+        color: $rma-yellow !important;
+    }
+}
+.text-danger-hover {
+    &:hover {
+        color: $rma-red !important;
+    }
+}

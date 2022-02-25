@@ -1,0 +1,22 @@
+.jconfirm .jconfirm-box div.jconfirm-title-c .jconfirm-title {
+    font-weight: $fw-m;
+}
+.jconfirm.jconfirm-white .jconfirm-box .jconfirm-buttons button, 
+.jconfirm.jconfirm-light .jconfirm-box .jconfirm-buttons button {
+    text-transform: initial;
+    font-weight: $fw-n;
+}
+.jconfirm .jconfirm-box .jconfirm-buttons {
+    .btn {
+        &.btn-primary-outline {
+            background-color: #fff;
+            border: 1px solid $btn-default;
+            color: $color-black;
+            &:hover {
+                background-color: $btn-default-hover;
+                border-color: $btn-default-hover;
+                color: $color-white;
+            }
+        }
+    }
+}

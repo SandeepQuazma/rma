@@ -1,0 +1,180 @@
+@import "rma-variables.scss";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="rma-"], [class*=" rma-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.rma-copy {
+  &:before {
+    content: $rma-copy;    
+  }
+}
+.rma-caret-down {
+  &:before {
+    content: $rma-caret-down; 
+  }
+}
+.rma-caret-up {
+  &:before {
+    content: $rma-caret-up;     
+  }
+}
+.rma-money-hand {
+  &:before {
+    content: $rma-money-hand;   
+  }
+}
+.rma-quote2-left {
+  &:before {
+    content: $rma-quote2-left; 
+  }
+}
+.rma-quote2-right {
+  &:before {
+    content: $rma-quote2-right; 
+  }
+}
+.rma-left-quote {
+  &:before {
+    content: $rma-left-quote; 
+  }
+}
+.rma-Vector {
+  &:before {
+    content: $rma-Vector; 
+  }
+}
+.rma-plus {
+  &:before {
+    content: $rma-plus-1;     
+    color: #fff;
+  }
+}
+.rma-right-arrow {
+  &:before {
+    content: $rma-right-arrow-1;     
+  }
+}
+.rma-call {
+  &:before {
+    content: $rma-call; 
+  }
+}
+.rma-shutter {
+  &:before {
+    content: $rma-shutter;     
+  }
+}
+.rma-menu {
+  &:before {
+    content: $rma-menu;     
+  }
+}
+.rma-help-desk {
+  &:before {
+    content: $rma-help-desk; 
+  }
+}
+.rma-filter {
+  &:before {
+    content: $rma-filter;     
+  }
+}
+.rma-email {
+  &:before {
+    content: $rma-email2;     
+  }
+}
+.rma-edit {
+  &:before {
+    content: $rma-edit;     
+  }
+}
+.rma-download {
+  &:before {
+    content: $rma-download;     
+  }
+}
+.rma-calender {
+  &:before {
+    content: $rma-calender;     
+  }
+}
+.rma-user {
+  &:before {
+    content: $rma-user; 
+  }
+}
+.rma-thumb-up {
+  &:before {
+    content: $rma-thumb-up-1; 
+  }
+}
+.rma-sum {
+  &:before {
+    content: $rma-sum; 
+  }
+}
+.rma-find {
+  &:before {
+    content: $rma-find-1; 
+  }
+}
+.rma-mail-sent-1 {
+  &:before {
+    content: $rma-mail-sent-1; 
+  }
+}
+.rma-edit-1 {
+  &:before {
+    content: $rma-edit-1; 
+  }
+}
+.rma-umbrella {
+  &:before {
+    content: $rma-umbrella; 
+  }
+}
+.rma-pdf-file {
+  &:before {
+    content: $rma-pdf-file-1-1; 
+  }
+}
+.rma-pencil {
+  &:before {
+    content: $rma-pencil-4; 
+  }
+}
+.rma-info {
+  &:before {
+    content: $rma-info; 
+  }
+}
+.rma-premium-1 {
+  &:before {
+    content: $rma-premium-1; 
+  }
+}
+

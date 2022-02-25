@@ -1,0 +1,24 @@
+
+.auth-wrapper{
+    .login-form-wrapper{
+        .password-wrapper{
+            position: relative; 
+            .togglePassword{
+                position: absolute;
+                right: 0;
+                top: 50%;
+                padding: 7px 15px;
+                transform: translateY(-50%);
+                svg{
+                    font-size: 20px;
+                    color: #414D55;
+                    transition: 0.2s all linear;
+                }
+            } 
+        }
+        .forgot-pass-link {
+            font-size: 13px;
+            color: #008eb3;
+        }
+    }
+}

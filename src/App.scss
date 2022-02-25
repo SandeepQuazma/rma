@@ -1,0 +1,44 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~react-datepicker/dist/react-datepicker.css";
+
+// vendors
+@import "./components/assets/sass/vendors/rma-fonts/rma-fonts";
+
+// abstracts
+@import './components/assets/sass/abstracts/variables';
+@import './components/assets/sass/abstracts/colors';
+
+// base
+@import "./components/assets/sass/base/reset";
+@import "./components/assets/sass/base/typography";
+
+// layout
+@import "./components/assets/sass/layout/filter";
+@import "./components/assets/sass/layout/forms";
+@import "./components/assets/sass/layout/selectpicker-or";
+@import "./components/assets/sass/layout/confirm-alert";
+@import "./components/assets/sass/layout/table";
+
+// components
+@import "./components/assets/sass/components/buttons";
+// @import "components/header";
+// @import "components/loader";
+// @import "components/upload";
+@import "./components/assets/sass/preloader.scss";
+@import "./components/assets/sass/components/paginations";
+@import "./components/assets/sass/components/checkbox";
+
+// Pages
+@import './components/assets/sass/pages/data-grid-tables-rma.scss';
+@import './components/assets/sass/quote-listing';
+@import './components/assets/sass/calculator';
+@import './components/assets/sass/version-logs';
+@import './components/assets/sass/pages/dashboard';
+@import './components/assets/sass/pages/products';
+@import './components/assets/sass/pages/scheme-settings';
+@import './components/assets/sass/pages/update-profile';
+@import './components/assets/sass/pages/login';
+
+@import './components/assets/sass/preview';
+@import './components/assets/sass/thank-you';
+@import './components/assets/sass/pages/custom';

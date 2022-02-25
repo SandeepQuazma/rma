@@ -1,0 +1,42 @@
+form.has-label-on-border{
+    .form-group{
+        margin-bottom: 25px !important;
+    }
+    table.form-inside-table{
+        border: 1px solid #dee2e6;
+        width: calc(100% - 30px);
+        margin-left: 15px;
+        thead{
+            tr{
+                th{
+                    font-size: 13px;
+                    background-color: #f5f6fa;
+                    font-weight: 500;
+                    padding: 8px 10px;
+                    color: #001737;
+                    border-color: rgba(72,94,144,0.16);
+                    border-bottom: 0;
+                    text-align: center;
+                
+                }
+            }
+        }
+        tbody{
+            border-top: 0 !important;
+            tr{
+                td{
+                    &.action-class-icon{
+                        color:#cb1334;
+                        text-align: center;
+                        font-size: 17px;
+                        button.removeRepeterFields{
+                            border: 0 !important;
+                            color: #cb1334 !important;
+                            background: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

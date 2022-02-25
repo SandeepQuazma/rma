@@ -1,0 +1,14 @@
+.pagination{
+    .page-item{
+        .page-link{
+            color: $rma-primary-blue-2;
+            font-size: 13px;
+        }
+        &.active {
+            .page-link {
+                color: $color-white;
+                background-color: $rma-primary-blue-2;
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.table-grid-rma{
+    .MuiDataGrid-columnSeparator.MuiDataGrid-columnSeparator--sideRight{
+        display: none;
+    }
+    .MuiDataGrid-columnHeadersInner.css-1s0hp0k-MuiDataGrid-columnHeadersInner{
+        font-size: 13px;
+        background-color: #f5f6fa;
+        font-weight: 500;
+        padding: 8px 10px;
+        color: #001737;
+        border-color: rgba(72,94,144,0.16);
+    }
+    .MuiDataGrid-columnHeader.table-grid-col-rma{
+        border-color: rgba(72,94,144,0.16);
+        border-right: 1px;
+    }
+    .MuiDataGrid-columnHeaders.css-okt5j6-MuiDataGrid-columnHeaders{
+        min-height: 37px !important;
+        line-height: 37px !important;
+        max-height: 37px !important;
+    }
+    .MuiDataGrid-virtualScroller.css-1pans1z-MuiDataGrid-virtualScroller{
+        margin-top: 37px !important;
+    }
+    .MuiDataGrid-virtualScrollerRenderZone.css-uw2ren-MuiDataGrid-virtualScrollerRenderZone{
+        .MuiDataGrid-row{
+            min-height: 42px !important;
+            line-height: 42px !important;
+            max-height: 42px !important;
+        }
+    }
+    .material-icon-size-rma{
+        font-size: 17px;
+    }
+    .css-pay28z-MuiDataGrid-root .MuiDataGrid-cell{
+        padding: 8px 10px;
+        padding-left: 24px;
+        color: #001737;
+    }
+    .badge{
+        font-weight: 500;
+        font-size: 85%;
+        padding: 6px;
+        min-width: 84px;
+        color: #fff;
+        text-transform: capitalize !important;
+        &.active-status.success{
+            background-color: #28a745;
+        }
+        &.inactive-status.warning{
+            background-color: #fbad17;
+        }
+        &.deactive-status.danger{
+            background-color: #cb1334;
+        }
+    }
+    .css-pay28z-MuiDataGrid-root .MuiDataGrid-row:hover, .css-pay28z-MuiDataGrid-root .MuiDataGrid-row.Mui-hovered{
+        background-color: #fff;
+    }
+}

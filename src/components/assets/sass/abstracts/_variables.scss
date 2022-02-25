@@ -1,0 +1,50 @@
+// --------color palate-------------
+$rma-primary-blue-1: #00bce7;
+$rma-primary-blue-1-rgb: rgb(0, 188, 231);
+$rma-primary-blue-2: #008eb3;
+$rma-primary-blue-2-rgb: #008fb4;
+$rma-primary-blue-3: #00597c;
+$rma-primary-blue-3-rgb: rgb(0, 90, 124);
+$dark-blue: #065B7D;
+$primary-shade: #00B3DC;
+$rma-yellow: #fbad17;
+$rma-yellow-rgb: rgb(251, 173, 24);
+$rma-yellow-rgba-light: rgba(251, 173, 24, 0.2);
+$rma-orange: #ef6d21;
+$rma-orange-rgb: rgb(239, 110, 34);
+$rma-red: #cb1334;
+$rma-red-rgb: rgb(204, 19, 53);
+$rma-red-rgba-light: rgba(204, 19, 53, 0.2);
+$rma-gray: #58585b;
+$rma-gray-rgb: rgb(88, 89, 91);
+$rma-gray-rgba-light: rgba(88, 89, 91, 0.2);
+$rma-green: #28a745;
+$rma-green-rgb: rgb(40, 167, 69);
+$rma-green-rgba-light: rgba(40, 167, 69, 0.2);
+
+$color-white: #fff;
+$color-black: #000;
+$black-light: #414D55;
+$primary-text: #222;
+$gray-light: #F8F8FA;
+$gray-light2: #9E9E9E;
+$green2: #0CBF08;
+// ---------typography---------------
+$rma-primary-font: "Gotham", Arial, sans-serif;
+$rma-secondary-font: "Arial", sans-serif;
+// font-weight
+$fw-l: 300;
+$fw-n: normal;
+$fw-m: 500;
+$fw-b: bold;
+// -----------buttons-----------------
+$btn-default: $rma-primary-blue-1;
+$btn-default-hover: $rma-primary-blue-2;
+$btn-secondary: #00597c;
+// form
+$form-border: rgb(192, 204, 218);
+$shadow: 0px 4px 15px rgba(0,0,0,0.1);
+$input-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+$listing-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+$btn-shadow: 0px 0px 10px rgba(0,0,0,0.125);
+$footer-shadow: 4px 4px 15px rgba(0, 0, 0, 0.35);

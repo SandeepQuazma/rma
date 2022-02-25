@@ -1,0 +1,67 @@
+a{
+    color: #212529;
+    text-decoration: none;
+    &:hover, &:active, &:focus, &:focus-visible, &:focus-within{
+        color: #008eb3;
+    }
+}
+.dashboard-page{
+    padding-top: 50px;
+    .recharts-responsive-container{
+        li.recharts-legend-item{
+            padding-top: 20px;
+            svg.recharts-surface{
+                display: none !important;
+            }
+        }
+        
+    }
+
+    .quote-count{
+        svg{
+            font-size: 13px;
+        }
+    }
+    .quote-value{
+        svg.text-danger{
+            color:#cb1334 !important
+        }
+        svg.text-success{
+            color: #0CBF08 !important;
+        }
+    }
+    .charts-row{
+        .card{
+            .card-title{
+                padding: 15px 30px;
+                .charts-info{
+                    p.charts-info-first{
+                        font-size: 30px;
+                        margin-bottom: 0 !important;
+                        font-weight: bold;
+                        margin-top: 4px;
+                        line-height: normal;
+                        svg{
+                            color: #00bce7;
+                            font-size: 21px;
+                            margin-right: 5px;
+                        }
+                    }
+                    p.charts-info-second{
+                        margin-bottom: 0 !important;
+                        font-size: 15px;
+                        color: #0CBF08 !important;
+                        svg{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            .card-body{
+                height: 350px;
+
+            }
+        }
+        
+    }
+}

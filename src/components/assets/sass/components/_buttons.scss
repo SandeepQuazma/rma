@@ -1,0 +1,88 @@
+%btn-shared {
+    border: 1px solid $btn-default;
+    box-shadow: $btn-shadow;
+    min-width: 170px;
+    padding: 12px 0;
+    border-radius: 0;
+}
+.btn {
+    &.btn-primary {
+        background-color: $btn-default;
+        color: $color-white;
+        @extend %btn-shared;
+        font-size: 15px;
+        font-weight: $fw-m;
+        &:hover {
+            background-color: $btn-default-hover;
+            color: $color-white;
+            border: 1px solid $btn-default-hover;
+        }
+        &.btn-sm {
+            padding: 4px;
+        }
+        &.btn-xs{
+            min-width: 70px;
+        }
+    }
+    &.btn-warning {
+        background-color: $rma-yellow;
+        border: 1px solid $rma-yellow;
+        box-shadow: $btn-shadow;
+        padding: 12px;
+        border-radius: 0;
+        color: $color-white;
+        &:hover, &:focus, &:active {
+            background-color: #e29c15;
+            border-color: #e29c15;
+            color: $color-white;
+        }
+    }
+    &.btn-primary-outline {
+        background-color: $color-white;
+        @extend %btn-shared;
+        color: $color-black;
+        font-size: 15px;
+        &.btn-sm {
+            padding: .25rem .5rem;
+            min-width: auto;         
+        }   
+        &:hover,
+        &.active {
+            background-color: $btn-default-hover;
+            border-color: $btn-default-hover;
+            color: $color-white;
+        }
+    }
+    &.btn-secondary {
+        border-color: #c0ccda;
+        color: rgba(27, 46, 75, 0.7);
+        background-color: $color-white;;
+        &:not(:disabled):not(.disabled):active{
+            background-color: $color-white;;
+            box-shadow: none;
+            color: #1b2e4b;
+        }
+        &:hover {
+            border-color: #8392a5;
+            color: #1b2e4b;
+        }
+        &:active,&:focus{
+            background-color: $color-white;
+            box-shadow: none;
+            outline: none;
+        }
+        
+    }
+    &.btn-transparent {
+        background-color: transparent;
+        &:focus, &:active {
+            box-shadow: none;
+            outline: none;
+        }
+    }
+}
+.btn-link{
+    &:hover{
+        color: #00597c;
+    }
+}

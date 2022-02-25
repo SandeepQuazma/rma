@@ -1,0 +1,58 @@
+.custom-table{
+    table{
+        border-radius: 4px;
+        background-color: $color-white;
+    }
+    thead{
+        border: none;
+        th{
+            font-size: 13px;
+            background-color: rgb(245, 246, 250);
+            font-weight: 500;
+            padding: 8px 10px;
+            color: #001737;
+            border-color: rgba(72, 94, 144, 0.16);
+            border-bottom: 0;
+        }
+    }
+    td{
+        border-color: rgba(72, 94, 144, 0.16);
+        padding: 8px 10px;
+        a{
+            color: $color-black;
+            text-decoration: none;
+            &:hover{
+                text-decoration: none;
+                color: $rma-primary-blue-2;
+            }
+        }
+    }
+    td{
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+}
+.table {
+    .badge {
+        font-weight: 500;
+        font-size: 85%;
+        padding: 6px;
+        min-width: 84px;
+    }
+}
+
+.table-action{
+    button{
+        padding: 2px 4px;
+        span{
+            &::before{
+                font-size: 17px;
+            }
+        }
+    }
+}
+.table-bordered > :not(caption) > * {
+    border-width: 1px 0;
+    border-style: dashed;
+    border-color: #D4D4D4;
+}

@@ -1,0 +1,49 @@
+.form-group {
+    .bootstrap-select {
+        .btn {
+            box-shadow: $input-shadow;
+            &.btn-light {
+                background-color: #fff;
+                border: 1px solid $form-border;
+                color: $primary-text;
+            }
+        }
+        .dropdown-toggle:focus,
+        >select.mobile-device:focus+.dropdown-toggle {
+            outline: 0 none !important;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            border-color: $rma-primary-blue-1;
+        }
+        .dropdown-item.active,
+        .dropdown-item:active {
+            background-color: $rma-primary-blue-3;
+        }
+        .dropdown-item {
+            line-height: 1.5;
+            padding: 8px 12px 6px;
+            font-size: .9rem;
+        }
+        &.form-control {
+            box-shadow: none;
+            height: auto;
+            padding: 0;
+        }
+    }
+}
+
+.has-label-on-border {
+    .form-group {
+        .bootstrap-select {
+            .btn {
+                padding: 10px 12px 10px;
+                box-shadow: $input-shadow;
+                &.btn-light {
+                    background-color: #fff;
+                    border: 1px solid $form-border;
+                    color: $primary-text;
+                }
+            }
+        }
+    }
+}

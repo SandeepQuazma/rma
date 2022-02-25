@@ -1,0 +1,63 @@
+.page-version-logs {
+    .timeline {
+        position: relative;
+        max-width: 715px;
+        margin: 0 auto;
+        &:after{
+            content: '';
+            position: absolute;
+            width: 3px;
+            background-color: #EDEDED;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .container-timeline {
+            position: relative;
+            width: 50%;
+            &.left{
+                padding-right: 37px;
+                padding-top: 18px;
+            }
+            &.right{
+                padding-left: 36px;
+                padding-top: 12px;
+                left: 50%;
+                &::after{
+                    left: -12px;
+                }
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                right: -12px;
+                background-color: $dark-blue;
+                border: 4px solid #fff;
+                top: 15px;
+                box-shadow: $listing-shadow;
+                border-radius: 50%;
+                z-index: 1;
+            }   
+            &.content-success {
+                &:after {
+                    background-color: $green2;
+                }
+            }
+            &.content-prev {
+                &:after {
+                    background-color: $dark-blue;
+                }
+            }
+        }
+        .update-comment{
+            font-size: 13px;
+            padding: 10px 0 0;
+            border-top: 1px solid #C9C9C9;
+            margin-top: 15px;
+            font-weight: 400;
+        }
+    }
+}

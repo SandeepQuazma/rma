@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('./components/assets/fonts/gotham/Gotham-Medium.eot');
+    src: url('./components/assets/fonts/gotham/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./components/assets/fonts/gotham/Gotham-Medium.woff2') format('woff2'),
+        url('./components/assets/fonts/gotham/Gotham-Medium.woff') format('woff'),
+        url('./components/assets/fonts/gotham/Gotham-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('./components/assets/fonts/gotham/Gotham-Book.eot');
+    src: url('./components/assets/fonts/gotham/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+        url('./components/assets/fonts/gotham/Gotham-Book.woff2') format('woff2'),
+        url('./components/assets/fonts/gotham/Gotham-Book.woff') format('woff'),
+        url('./components/assets/fonts/gotham/Gotham-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('./components/assets/fonts/gotham/Gotham-Bold.eot');
+    src: url('./components/assets/fonts/gotham/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./components/assets/fonts/gotham/Gotham-Bold.woff2') format('woff2'),
+        url('./components/assets/fonts/gotham/Gotham-Bold.woff') format('woff'),
+        url('./components/assets/fonts/gotham/Gotham-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('./components/assets/fonts/gotham/Gotham-Light.eot');
+    src: url('./components/assets/fonts/gotham/Gotham-Light.eot?#iefix') format('embedded-opentype'),
+        url('./components/assets/fonts/gotham/Gotham-Light.woff2') format('woff2'),
+        url('./components/assets/fonts/gotham/Gotham-Light.woff') format('woff'),
+        url('./components/assets/fonts/gotham/Gotham-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,107 @@
+body {
+  font-family: $rma-primary-font;
+}
+button, span, i, input, select, textarea {
+  font-family: $rma-primary-font;
+  outline: none;
+}
+.validationAlert {
+  font-size: 12px;
+  font-weight: $fw-n;
+  margin-top: 0.25rem;
+  color: $rma-red;
+  display: none;
+}
+.text-primary{
+  color: $rma-primary-blue-1;
+}
+.text-orange{
+  color: $rma-orange;
+}
+.text-danger{
+  color: $rma-red !important;
+}
+.text-success{
+  color: $green2 !important;
+}
+a{
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+textarea {
+  resize: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+// mdi icon css reset
+i.mdi, 
+span.mdi {
+  line-height: normal;
+  vertical-align: middle;
+}
+
+//badges
+.badge{
+  padding: 5px 10px;
+  &.badge-warning{
+    background-color: $rma-yellow;
+    color: $color-white;
+  }
+  &.badge-danger{
+    background-color: $rma-red;
+    color: $color-white;
+  }
+  &.badge-success{
+    background-color: $rma-green;
+    color: $color-white;
+  }
+}
+.page-title {
+  font-size: 22px;
+}
+.sub-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  // border-bottom: 1px solid $form-border;
+  // margin-bottom: 15px;
+  h4 {
+      font-size: 22px;
+      margin: 0px;
+  }
+}
+//input group
+.input-group-text{
+  &:hover{
+    color:  $rma-primary-blue-2;
+  }
+}
+
+.row {
+  margin-left: -10px;
+  margin-right: -10px;
+  > div[class*="col-"] {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.dash-divider {
+  border-color: $form-border;
+  border-style: dashed;
+  &.top {
+    border-width: 0;    
+    border-top-width: 2px;
+  }
+}
+@media (min-width: 1280px){
+  .container {
+      max-width: 1280px;
+      width: 1280px;
+  }
+}
