@@ -22,6 +22,26 @@ export const getTabState = createAsyncThunk(
     }
 );
 
+export const getPremium = createAsyncThunk(
+    "product/getPremium",
+    async (state) => {
+        try {
+            
+          
+            return { getPremium: state };
+        } catch (error) {
+            const message =
+                (error.response &&
+                    error.response.data &&
+                    error.response.data.message) ||
+                error.message ||
+                error.toString();
+
+            return message;
+        }
+    }
+);
+
 
 
 export const getProductList = createAsyncThunk(
@@ -74,6 +94,7 @@ const initialState = {
     productList:"",
     productDetails:"",
     tabState:"",
+    getPremiums:"",
     message: "",
 };
 const qouteSlice = createSlice({
@@ -96,6 +117,12 @@ const qouteSlice = createSlice({
             state.tabState = action.payload.tabState;
         },
         [getTabState.rejected]: (state, action) => {
+            state.message = action.payload?.message || 'not working';
+        },
+        [getPremium.fulfilled]: (state, action) => {
+            state.getPremiums = action.payload.getPremium;
+        },
+        [getPremium.rejected]: (state, action) => {
             state.message = action.payload?.message || 'not working';
         },
        

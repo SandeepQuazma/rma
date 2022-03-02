@@ -11,11 +11,11 @@ export default function Info({handleChange,values}){
             <div className="row">
                 <div className="col-md-4 form-group">
                     <label htmlFor="companyName">Company Name</label>
-                    <input type="text" className="form-control" id="companyName" value={values.companyName} name='companyName'  onChange={handleChange}/>
+                    <input type="text" className="form-control" id="companyName" value={values.companyName} name='company_name'  onChange={handleChange}/>
                 </div>
                 <div className="col-md-4 form-group">
                     <label htmlFor="contactPerson">Contact Person</label>
-                    <input type="text" className="form-control" name='contactPerson' value={values.contactPerson}  id="contactPerson"  onChange={handleChange}/>
+                    <input type="text" className="form-control" name='contact_person' value={values.contactPerson}  id="contact_person"  onChange={handleChange}/>
                 </div>
                 <div className="col-md-4 form-group">
                     <label htmlFor="email">Email</label>
@@ -31,11 +31,11 @@ export default function Info({handleChange,values}){
                 </div>
                 <div className="col-md-4 form-group">
                     <label htmlFor="suburb">Suburb</label>
-                    <input type="text" className="form-control" name='suburb' value={values.suburb} id="suburb" onChange={handleChange}/>
+                    <input type="text" className="form-control" name='state_id' value={values.suburb} id="suburb" onChange={handleChange}/>
                 </div>
                 <div className="col-md-4 form-group">
                     <label>City / Town</label>
-                    <select className="form-control"name='city' value={values.city} defaultValue={'Select'} onChange={handleChange}>
+                    <select className="form-control"name='city_id' value={values.city} defaultValue={'Select'} onChange={handleChange}>
                         <option>Select</option>
                         <option value="mumbai">Mumbai</option>
                         <option value="randburg" >Randburg</option>
@@ -43,14 +43,14 @@ export default function Info({handleChange,values}){
                 </div>
                 <div className="col-md-4 form-group">
                     <label>Province</label>
-                    <select className="form-control" name='Province' value={values.province} defaultValue={'Select'}  onChange={handleChange}>
+                    <select className="form-control" name='country_code' value={values.province} defaultValue={'Select'}  onChange={handleChange}>
                         <option  >Select</option>
                         <option value="gauteng">Gauteng</option>
                     </select>
                 </div>
                 <div className="col-md-4 form-group mb-0">
                     <label htmlFor="postal">Postal</label>
-                    <input type="text" className="form-control" name='postal' value={values.postal} id="postal" onChange={handleChange}/>
+                    <input type="text" className="form-control" name='zipcode' value={values.postal} id="postal" onChange={handleChange}/>
                 </div>
             </div>
             </div>

@@ -5,18 +5,18 @@ import SetCoverPremium from './Parts/SetCoverPremium';
 import { getProductList,getproductDetail } from '../../../../../features/quotes/slices/QuotesInfo';
 import {useDispatch,useSelector} from 'react-redux';
 const initialValue ={
-  companyName:'',
-  contactPerson:'',
+  company_name:'',
+  contact_person:'',
   email:'',
   phone:'',
   address:'',
-  suburb:'',
-  city:'',
-  province:'',
-  postal:'',
-  option1:'',
-  option2:'', option3:'', option4:'', option5:'', option6:'',
-  product:'',commision:'',
+  state_id:'',
+  city_id:'',
+  country_code:'',
+  zipcode:'',
+  cover_amount1:'',
+  cover_amount2:'', cover_amount3:'', cover_amount4:'', cover_amount5:'', cover_amount6:'',
+  product_id:'',commission:'',
 }
 export default function GeneralInfo({ nextStep ,getAgeBand}) {
  
@@ -40,7 +40,7 @@ export default function GeneralInfo({ nextStep ,getAgeBand}) {
       console.log(e);
       // setLoading(false);
     });
-
+window.localStorage.removeItem("premiumInputs");
     
   }, []);
   const {productList}  = useSelector((state) => state.quotesInfo);
@@ -48,7 +48,7 @@ export default function GeneralInfo({ nextStep ,getAgeBand}) {
     e.preventDefault();
     console.log(values)
     //console.log(e.target)
-    const id = parseInt(values.product)
+    const id = parseInt(values.product_id)
     dispatch(getproductDetail(id)).unwrap()
     .then((res) => {
      // setLoading(false)
@@ -59,13 +59,11 @@ export default function GeneralInfo({ nextStep ,getAgeBand}) {
       // setLoading(false);
     });
     const band = productList.data.filter((val, i)=>{
-return val.id == values.product
+return val.id == values.product_id
     })
-    const {option1,
-    option2, option3, option4, option5, option6}=values
    
-    getAgeBand(band?.[0].product_age_band,[option1,
-      option2, option3, option4, option5, option6])
+   
+    getAgeBand(band?.[0].product_age_band,values)
     nextStep();
   }
 
